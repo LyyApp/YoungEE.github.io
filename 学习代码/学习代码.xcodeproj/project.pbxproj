@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A3046F24625D4D003FA6F6 /* 概念的理解 in Resources */ = {isa = PBXBuildFile; fileRef = 66A3046E24625D4D003FA6F6 /* 概念的理解 */; };
+		66A304722462913C003FA6F6 /* KVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A304712462913C003FA6F6 /* KVCController.m */; };
+		66A3047524629170003FA6F6 /* PropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A3047424629170003FA6F6 /* PropertyController.m */; };
 		66C54C7524568372000E2E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C54C7424568372000E2E3D /* AppDelegate.m */; };
 		66C54C7824568372000E2E3D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C54C7724568372000E2E3D /* SceneDelegate.m */; };
 		66C54C7B24568372000E2E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C54C7A24568372000E2E3D /* ViewController.m */; };
@@ -28,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66A3046E24625D4D003FA6F6 /* 概念的理解 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "概念的理解"; sourceTree = "<group>"; };
+		66A304702462913C003FA6F6 /* KVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCController.h; sourceTree = "<group>"; };
+		66A304712462913C003FA6F6 /* KVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCController.m; sourceTree = "<group>"; };
+		66A3047324629170003FA6F6 /* PropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyController.h; sourceTree = "<group>"; };
+		66A3047424629170003FA6F6 /* PropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyController.m; sourceTree = "<group>"; };
 		66C54C7024568372000E2E3D /* 学习代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "学习代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C54C7324568372000E2E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66C54C7424568372000E2E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +120,11 @@
 		66C54C9A24568379000E2E3D /* KVC */ = {
 			isa = PBXGroup;
 			children = (
+				66A3046E24625D4D003FA6F6 /* 概念的理解 */,
+				66A304702462913C003FA6F6 /* KVCController.h */,
+				66A304712462913C003FA6F6 /* KVCController.m */,
+				66A3047324629170003FA6F6 /* PropertyController.h */,
+				66A3047424629170003FA6F6 /* PropertyController.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C54C8324568373000E2E3D /* LaunchScreen.storyboard in Resources */,
+				66A3046F24625D4D003FA6F6 /* 概念的理解 in Resources */,
 				66C54C8024568373000E2E3D /* Assets.xcassets in Resources */,
 				66C54C7E24568372000E2E3D /* Main.storyboard in Resources */,
 			);
@@ -219,6 +233,8 @@
 				66C54C7B24568372000E2E3D /* ViewController.m in Sources */,
 				66C54C7524568372000E2E3D /* AppDelegate.m in Sources */,
 				66C54C8624568373000E2E3D /* main.m in Sources */,
+				66A304722462913C003FA6F6 /* KVCController.m in Sources */,
+				66A3047524629170003FA6F6 /* PropertyController.m in Sources */,
 				66C54C7824568372000E2E3D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
