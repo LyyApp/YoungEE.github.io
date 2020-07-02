@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668588D124ADB4D700B5A832 /* CopyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 668588D024ADB4D700B5A832 /* CopyDemo.m */; };
 		66A6CDF024A87C00009669A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A6CDEF24A87C00009669A8 /* AppDelegate.m */; };
 		66A6CDF324A87C00009669A8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A6CDF224A87C00009669A8 /* SceneDelegate.m */; };
 		66A6CDF624A87C00009669A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A6CDF524A87C00009669A8 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		668588CF24ADB4D700B5A832 /* CopyDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyDemo.h; sourceTree = "<group>"; };
+		668588D024ADB4D700B5A832 /* CopyDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyDemo.m; sourceTree = "<group>"; };
 		66A6CDEB24A87C00009669A8 /* 面试准备第一天.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "面试准备第一天.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A6CDEE24A87C00009669A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66A6CDEF24A87C00009669A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668588CE24ADB4C000B5A832 /* copy */ = {
+			isa = PBXGroup;
+			children = (
+				668588CF24ADB4D700B5A832 /* CopyDemo.h */,
+				668588D024ADB4D700B5A832 /* CopyDemo.m */,
+			);
+			path = copy;
+			sourceTree = "<group>";
+		};
 		66A6CDE224A87C00009669A8 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +102,7 @@
 		66A6CDED24A87C00009669A8 /* 面试准备第一天 */ = {
 			isa = PBXGroup;
 			children = (
+				668588CE24ADB4C000B5A832 /* copy */,
 				66A6CE1524A87C09009669A8 /* assign修饰对象 */,
 				66A6CDEE24A87C00009669A8 /* AppDelegate.h */,
 				66A6CDEF24A87C00009669A8 /* AppDelegate.m */,
@@ -226,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668588D124ADB4D700B5A832 /* CopyDemo.m in Sources */,
 				66A6CDF624A87C00009669A8 /* ViewController.m in Sources */,
 				66A6CDF024A87C00009669A8 /* AppDelegate.m in Sources */,
 				66A6CE0124A87C01009669A8 /* main.m in Sources */,

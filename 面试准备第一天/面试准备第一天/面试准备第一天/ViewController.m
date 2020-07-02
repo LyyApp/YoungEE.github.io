@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "AssignController.h"
 
+#import "CopyDemo.h"
+
 @interface ViewController ()
 
 @end
@@ -18,7 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor =UIColor.whiteColor;
-    [self.navigationController pushViewController:[AssignController new] animated:YES];
+//    [self.navigationController pushViewController:[AssignController new] animated:YES];
+    
+    CopyDemo *demo = [CopyDemo new];
+    
     // Do any additional setup after loading the view.
 }
 
