@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		663770BA24B306C900D4BB74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770B924B306C900D4BB74 /* AppDelegate.m */; };
+		663770BD24B306C900D4BB74 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770BC24B306C900D4BB74 /* SceneDelegate.m */; };
+		663770C024B306C900D4BB74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770BF24B306C900D4BB74 /* ViewController.m */; };
+		663770C324B306C900D4BB74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663770C124B306C900D4BB74 /* Main.storyboard */; };
+		663770C524B306CB00D4BB74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663770C424B306CB00D4BB74 /* Assets.xcassets */; };
+		663770C824B306CB00D4BB74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663770C624B306CB00D4BB74 /* LaunchScreen.storyboard */; };
+		663770CB24B306CB00D4BB74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770CA24B306CB00D4BB74 /* main.m */; };
+		663770D524B306CB00D4BB74 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770D424B306CB00D4BB74 /* _______UITests.m */; };
+		663770E224B306EC00D4BB74 /* lei.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770E124B306EC00D4BB74 /* lei.m */; };
+		663770E524B306FD00D4BB74 /* baseLei.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770E424B306FD00D4BB74 /* baseLei.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		663770D124B306CB00D4BB74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 663770AD24B306C900D4BB74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663770B424B306C900D4BB74;
+			remoteInfo = "面试准备第四天";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		663770B524B306C900D4BB74 /* 面试准备第四天.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "面试准备第四天.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		663770B824B306C900D4BB74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		663770B924B306C900D4BB74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		663770BB24B306C900D4BB74 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		663770BC24B306C900D4BB74 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		663770BE24B306C900D4BB74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		663770BF24B306C900D4BB74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		663770C224B306C900D4BB74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		663770C424B306CB00D4BB74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		663770C724B306CB00D4BB74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		663770C924B306CB00D4BB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663770CA24B306CB00D4BB74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		663770D024B306CB00D4BB74 /* 面试准备第四天UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "面试准备第四天UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		663770D424B306CB00D4BB74 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
+		663770D624B306CB00D4BB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663770E024B306EC00D4BB74 /* lei.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lei.h; sourceTree = "<group>"; };
+		663770E124B306EC00D4BB74 /* lei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lei.m; sourceTree = "<group>"; };
+		663770E324B306FD00D4BB74 /* baseLei.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseLei.h; sourceTree = "<group>"; };
+		663770E424B306FD00D4BB74 /* baseLei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baseLei.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		663770B224B306C900D4BB74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663770CD24B306CB00D4BB74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		663770AC24B306C900D4BB74 = {
+			isa = PBXGroup;
+			children = (
+				663770B724B306C900D4BB74 /* 面试准备第四天 */,
+				663770D324B306CB00D4BB74 /* 面试准备第四天UITests */,
+				663770B624B306C900D4BB74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		663770B624B306C900D4BB74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				663770B524B306C900D4BB74 /* 面试准备第四天.app */,
+				663770D024B306CB00D4BB74 /* 面试准备第四天UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		663770B724B306C900D4BB74 /* 面试准备第四天 */ = {
+			isa = PBXGroup;
+			children = (
+				663770DF24B306D000D4BB74 /* 对象，类对象，元类对象 */,
+				663770B824B306C900D4BB74 /* AppDelegate.h */,
+				663770B924B306C900D4BB74 /* AppDelegate.m */,
+				663770BB24B306C900D4BB74 /* SceneDelegate.h */,
+				663770BC24B306C900D4BB74 /* SceneDelegate.m */,
+				663770BE24B306C900D4BB74 /* ViewController.h */,
+				663770BF24B306C900D4BB74 /* ViewController.m */,
+				663770C124B306C900D4BB74 /* Main.storyboard */,
+				663770C424B306CB00D4BB74 /* Assets.xcassets */,
+				663770C624B306CB00D4BB74 /* LaunchScreen.storyboard */,
+				663770C924B306CB00D4BB74 /* Info.plist */,
+				663770CA24B306CB00D4BB74 /* main.m */,
+			);
+			path = "面试准备第四天";
+			sourceTree = "<group>";
+		};
+		663770D324B306CB00D4BB74 /* 面试准备第四天UITests */ = {
+			isa = PBXGroup;
+			children = (
+				663770D424B306CB00D4BB74 /* _______UITests.m */,
+				663770D624B306CB00D4BB74 /* Info.plist */,
+			);
+			path = "面试准备第四天UITests";
+			sourceTree = "<group>";
+		};
+		663770DF24B306D000D4BB74 /* 对象，类对象，元类对象 */ = {
+			isa = PBXGroup;
+			children = (
+				663770E024B306EC00D4BB74 /* lei.h */,
+				663770E124B306EC00D4BB74 /* lei.m */,
+				663770E324B306FD00D4BB74 /* baseLei.h */,
+				663770E424B306FD00D4BB74 /* baseLei.m */,
+			);
+			path = "对象，类对象，元类对象";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		663770B424B306C900D4BB74 /* 面试准备第四天 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663770D924B306CB00D4BB74 /* Build configuration list for PBXNativeTarget "面试准备第四天" */;
+			buildPhases = (
+				663770B124B306C900D4BB74 /* Sources */,
+				663770B224B306C900D4BB74 /* Frameworks */,
+				663770B324B306C900D4BB74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "面试准备第四天";
+			productName = "面试准备第四天";
+			productReference = 663770B524B306C900D4BB74 /* 面试准备第四天.app */;
+			productType = "com.apple.product-type.application";
+		};
+		663770CF24B306CB00D4BB74 /* 面试准备第四天UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663770DC24B306CB00D4BB74 /* Build configuration list for PBXNativeTarget "面试准备第四天UITests" */;
+			buildPhases = (
+				663770CC24B306CB00D4BB74 /* Sources */,
+				663770CD24B306CB00D4BB74 /* Frameworks */,
+				663770CE24B306CB00D4BB74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				663770D224B306CB00D4BB74 /* PBXTargetDependency */,
+			);
+			name = "面试准备第四天UITests";
+			productName = "面试准备第四天UITests";
+			productReference = 663770D024B306CB00D4BB74 /* 面试准备第四天UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		663770AD24B306C900D4BB74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = YoungEE;
+				TargetAttributes = {
+					663770B424B306C900D4BB74 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					663770CF24B306CB00D4BB74 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 663770B424B306C900D4BB74;
+					};
+				};
+			};
+			buildConfigurationList = 663770B024B306C900D4BB74 /* Build configuration list for PBXProject "面试准备第四天" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 663770AC24B306C900D4BB74;
+			productRefGroup = 663770B624B306C900D4BB74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				663770B424B306C900D4BB74 /* 面试准备第四天 */,
+				663770CF24B306CB00D4BB74 /* 面试准备第四天UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		663770B324B306C900D4BB74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663770C824B306CB00D4BB74 /* LaunchScreen.storyboard in Resources */,
+				663770C524B306CB00D4BB74 /* Assets.xcassets in Resources */,
+				663770C324B306C900D4BB74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663770CE24B306CB00D4BB74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		663770B124B306C900D4BB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663770C024B306C900D4BB74 /* ViewController.m in Sources */,
+				663770E224B306EC00D4BB74 /* lei.m in Sources */,
+				663770BA24B306C900D4BB74 /* AppDelegate.m in Sources */,
+				663770E524B306FD00D4BB74 /* baseLei.m in Sources */,
+				663770CB24B306CB00D4BB74 /* main.m in Sources */,
+				663770BD24B306C900D4BB74 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663770CC24B306CB00D4BB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663770D524B306CB00D4BB74 /* _______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		663770D224B306CB00D4BB74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 663770B424B306C900D4BB74 /* 面试准备第四天 */;
+			targetProxy = 663770D124B306CB00D4BB74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		663770C124B306C900D4BB74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				663770C224B306C900D4BB74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		663770C624B306CB00D4BB74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				663770C724B306CB00D4BB74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		663770D724B306CB00D4BB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		663770D824B306CB00D4BB74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		663770DA24B306CB00D4BB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP9H39B6CY;
+				INFOPLIST_FILE = "面试准备第四天/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		663770DB24B306CB00D4BB74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP9H39B6CY;
+				INFOPLIST_FILE = "面试准备第四天/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		663770DD24B306CB00D4BB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP9H39B6CY;
+				INFOPLIST_FILE = "面试准备第四天UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "面试准备第四天";
+			};
+			name = Debug;
+		};
+		663770DE24B306CB00D4BB74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP9H39B6CY;
+				INFOPLIST_FILE = "面试准备第四天UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "面试准备第四天";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		663770B024B306C900D4BB74 /* Build configuration list for PBXProject "面试准备第四天" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663770D724B306CB00D4BB74 /* Debug */,
+				663770D824B306CB00D4BB74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663770D924B306CB00D4BB74 /* Build configuration list for PBXNativeTarget "面试准备第四天" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663770DA24B306CB00D4BB74 /* Debug */,
+				663770DB24B306CB00D4BB74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663770DC24B306CB00D4BB74 /* Build configuration list for PBXNativeTarget "面试准备第四天UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663770DD24B306CB00D4BB74 /* Debug */,
+				663770DE24B306CB00D4BB74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 663770AD24B306C900D4BB74 /* Project object */;
+}
