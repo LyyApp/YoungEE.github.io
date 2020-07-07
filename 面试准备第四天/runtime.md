@@ -64,7 +64,47 @@
  所以上面的面试题的答案就是不管是[self class] 还是[super class]都是调用的当前对象
 
 3、消息传递机制
+ 缓存查找，当前类查找，父类逐级查找
+ 消息传递机制步骤为，先进行缓存查找，命中则调用结束，未命中则进行当前类查找，当前类查找命中则调用结束，未命中进行逐级父类查找，父类查找命中则调用结束，未命中则消息转发结束流程
 
+4、缓存查找的流程与步骤
+ 缓存查找实际上就是根据给定的方法选择器(SEL),来查找(bucket_t)中对应的方法实现(IMP),bucket_t是方法选择器和方法实现的封装体，根据SEL去cache_t中查找bucket_t，cache_key_t---f(key)--->bucket_t   f(key) = key & mask
+ 具体步骤：
+ 1、根据给定的方法选择器(SEL),通过一个函数f(key)来映射出对应的bucket_t在数组中的位置，这部其实就是哈希查找。
+ 2、经过哈希函数算法key&mask(选择器因子key和对应的一个mask做谓语操作)算出的值就是给定值在对应数组中的索引位置提高查找效率。
+ 3、找到选择器因子对应的bucket_t之后，可以提取对应的IMP函数指针，返回给调用方。
+
+5、当前类查找
+ ①当前类中有对应的方法列表
+ ②对于已排序好的方法列表，采用二分查找算法查找方法对应的执行函数实现
+ ③对于没有排序好的方法类表，采用一般遍历去查找方法对应的执行函数实现
+
+6、父类逐级查找
+ ①通过当前类的superClass去查找父类，如果当前类是nsobject他的父类为nil 则结束查找流程
+ ②当前类的不为nsobject，则去查找父类的缓存是否命中，命中则结束查找流程，没有命中则去遍历方法列表，命中结束流程没有命中重复前面的步骤
+
+
+消息转发机制
+ 动态方法解析、快速消息转发机制、标准消息转发机制
+ 动态方法解析：首先征询接收者所属的类，看其是否能动态添加调用方法，来处理当前这个未知的选择子。
+ 			实例方法：+(BOOL) resolveInstanceMethod:(SEL) selector
+ 			类方法：+(BOOL) resolveClassMethod:(SEL) selector
+ 快速消息转发机制：寻找是否在其他类对象内有该方法的实现，并将改消息转发给此对象，如果目标对象实现了该方法，Runtime这时就会调用这个方法，给你把这个消息转			      发给其他类对象的机会，只要这个方法返回的不是nil或者self，整个消息发送的过程就会被重启，
+ 			  当然返回的对象就是return的对象否则就会继续normal forwarding
+ 			  使用到的方法为：-(id)forwardingTargetForSelector:(SEL) aSelector;
+ 标准消息转发机制(normal forwarding)：这一步是消息转发机制的最后一步，首先会发送消息会的函数的参数和返回值，如果返回nil，runtime会发出doesNotRec				ognizeSelector消息，然后crash，若是返回一个函数签名，runtime就会创建一个NSInvocation对象并发送消息给目标对象
+ 			 使用到的方法：获取函数的参数和返回值：-(Methodsignature *)methodSigatureForSelector:(SEL) aSelector;
+ 			 			发送消息给目标对象:-(void)forwardInvocation:(NSInvocation*) Invocation;
+消息转发机制详细代码见工程代码
+
+
+
+Method-Swizzling
+1、什么是Method-Swizzling
+ Method-Swizzling是方法交换，其中交换的是方法的实现，我们用@selector(方法选择器)取出来的是一个方法的编号(指向方法的指针)，用SEL类型表示；它所指向的是一个IMP(方法实现的指针),而我们交换的就是这个IMP，从而达到方法实现交换的效果。
+
+2、Method-swizzling的原理
+ 
 
  
 
