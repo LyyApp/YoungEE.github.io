@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "RuntimeObjc.h"
+#import "MethodSwizzlingDemo.h"
+
+#import <objc/runtime.h>
+#import "ViewController+methodSwizzling.h"
+#import "RuntimeAddMethod.h"
 
 @interface AppDelegate ()
 
@@ -15,11 +20,27 @@
 
 @implementation AppDelegate
 
+void  Swizzling(Class c,SEL old,SEL new){
+    Method oldMethod = class_getInstanceMethod(c,old);
+    Method newMethod = class_getInstanceMethod(c,new);
+    method_exchangeImplementations(oldMethod,newMethod);
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    Swizzling([UIViewController class], @selector(viewWillAppear:), @selector(swizzling_viewWillAppear:));
+    
     // Override point for customization after application launch.
-    RuntimeObjc *timeObjc = [RuntimeObjc new];
-    [timeObjc test];
+//    RuntimeObjc *timeObjc = [RuntimeObjc new];
+//    [timeObjc test];
+    
+//    MethodSwizzlingDemo *demo = [MethodSwizzlingDemo new];
+//    [demo test];
+//    [demo otherTest];
+    
+    
+    RuntimeAddMethod *method = [RuntimeAddMethod new];
+    [method test];
     return YES;
 }
 

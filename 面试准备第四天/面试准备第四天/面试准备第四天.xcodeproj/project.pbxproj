@@ -17,6 +17,9 @@
 		663770D524B306CB00D4BB74 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770D424B306CB00D4BB74 /* _______UITests.m */; };
 		663770E224B306EC00D4BB74 /* lei.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770E124B306EC00D4BB74 /* lei.m */; };
 		663770E524B306FD00D4BB74 /* baseLei.m in Sources */ = {isa = PBXBuildFile; fileRef = 663770E424B306FD00D4BB74 /* baseLei.m */; };
+		666A5FFB24B5612500B2D936 /* MethodSwizzlingDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A5FFA24B5612500B2D936 /* MethodSwizzlingDemo.m */; };
+		666A5FFE24B564C000B2D936 /* ViewController+methodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A5FFD24B564C000B2D936 /* ViewController+methodSwizzling.m */; };
+		666A600224B5B0FE00B2D936 /* RuntimeAddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A600124B5B0FE00B2D936 /* RuntimeAddMethod.m */; };
 		66F7E1AD24B457F900A2C4A8 /* RuntimeObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F7E1AC24B457F900A2C4A8 /* RuntimeObjc.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,12 @@
 		663770E124B306EC00D4BB74 /* lei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lei.m; sourceTree = "<group>"; };
 		663770E324B306FD00D4BB74 /* baseLei.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseLei.h; sourceTree = "<group>"; };
 		663770E424B306FD00D4BB74 /* baseLei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baseLei.m; sourceTree = "<group>"; };
+		666A5FF924B5612500B2D936 /* MethodSwizzlingDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingDemo.h; sourceTree = "<group>"; };
+		666A5FFA24B5612500B2D936 /* MethodSwizzlingDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingDemo.m; sourceTree = "<group>"; };
+		666A5FFC24B564C000B2D936 /* ViewController+methodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+methodSwizzling.h"; sourceTree = "<group>"; };
+		666A5FFD24B564C000B2D936 /* ViewController+methodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+methodSwizzling.m"; sourceTree = "<group>"; };
+		666A600024B5B0FE00B2D936 /* RuntimeAddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeAddMethod.h; sourceTree = "<group>"; };
+		666A600124B5B0FE00B2D936 /* RuntimeAddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeAddMethod.m; sourceTree = "<group>"; };
 		66F7E1AB24B457F900A2C4A8 /* RuntimeObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeObjc.h; sourceTree = "<group>"; };
 		66F7E1AC24B457F900A2C4A8 /* RuntimeObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeObjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +102,8 @@
 		663770B724B306C900D4BB74 /* 面试准备第四天 */ = {
 			isa = PBXGroup;
 			children = (
+				666A5FFF24B5B06100B2D936 /* 动态添加方法 */,
+				666A5FF824B560DB00B2D936 /* MethodSwizzling */,
 				66F7E1AA24B457DF00A2C4A8 /* 消息转发机制 */,
 				663770DF24B306D000D4BB74 /* 对象，类对象，元类对象 */,
 				663770B824B306C900D4BB74 /* AppDelegate.h */,
@@ -128,6 +139,26 @@
 				663770E424B306FD00D4BB74 /* baseLei.m */,
 			);
 			path = "对象，类对象，元类对象";
+			sourceTree = "<group>";
+		};
+		666A5FF824B560DB00B2D936 /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				666A5FF924B5612500B2D936 /* MethodSwizzlingDemo.h */,
+				666A5FFA24B5612500B2D936 /* MethodSwizzlingDemo.m */,
+				666A5FFC24B564C000B2D936 /* ViewController+methodSwizzling.h */,
+				666A5FFD24B564C000B2D936 /* ViewController+methodSwizzling.m */,
+			);
+			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
+		666A5FFF24B5B06100B2D936 /* 动态添加方法 */ = {
+			isa = PBXGroup;
+			children = (
+				666A600024B5B0FE00B2D936 /* RuntimeAddMethod.h */,
+				666A600124B5B0FE00B2D936 /* RuntimeAddMethod.m */,
+			);
+			path = "动态添加方法";
 			sourceTree = "<group>";
 		};
 		66F7E1AA24B457DF00A2C4A8 /* 消息转发机制 */ = {
@@ -239,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666A5FFE24B564C000B2D936 /* ViewController+methodSwizzling.m in Sources */,
 				663770C024B306C900D4BB74 /* ViewController.m in Sources */,
 				663770E224B306EC00D4BB74 /* lei.m in Sources */,
 				663770BA24B306C900D4BB74 /* AppDelegate.m in Sources */,
@@ -246,6 +278,8 @@
 				66F7E1AD24B457F900A2C4A8 /* RuntimeObjc.m in Sources */,
 				663770CB24B306CB00D4BB74 /* main.m in Sources */,
 				663770BD24B306C900D4BB74 /* SceneDelegate.m in Sources */,
+				666A5FFB24B5612500B2D936 /* MethodSwizzlingDemo.m in Sources */,
+				666A600224B5B0FE00B2D936 /* RuntimeAddMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

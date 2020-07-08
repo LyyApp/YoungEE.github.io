@@ -104,7 +104,15 @@ Method-Swizzling
  Method-Swizzling是方法交换，其中交换的是方法的实现，我们用@selector(方法选择器)取出来的是一个方法的编号(指向方法的指针)，用SEL类型表示；它所指向的是一个IMP(方法实现的指针),而我们交换的就是这个IMP，从而达到方法实现交换的效果。
 
 2、Method-swizzling的原理
- 
+ method-swizzling是发生在运行时的，主要用于在运行时将两个method进行交换，我们可以将method-swizzling代码写到任何地方但是只有在这段swizzling代码执行完毕后才生效
+
+ 具体的代码见工程
+
+动态添加方法
+1、performSelector用法及原理
+ performSelector是运行时系统负责去找方法，在编译时不做任何校验。如果方法不存在，直接调用方法编译期间就会有提示，而performSelector在运行时程序会崩溃，所以使用performSelector时候为了程序的健壮性，会使用检查方法- (BOOL)respondsToSelector:(SEL) aSelector
+ 直接调用方法时候，必须要在头文件中去声明该方法，并且import进来，使用performSelector不需要声明也不需要import直接调用即可
+
 
  
 
