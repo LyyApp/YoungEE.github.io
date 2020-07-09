@@ -23,6 +23,19 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:4];
+    [array addObject:@"1"];
+    [array addObject:@"2"];
+    [array addObject:@"3"];
+    [array addObject:@"4"];
+    NSLog(@"%@",array);
+    array = [NSMutableArray arrayWithCapacity:8];
+    [array addObject:@"5"];
+    [array addObject:@"6"];
+    [array addObject:@"7"];
+    [array addObject:@"8"];
+    NSLog(@"%@",array);
 }
 
 
