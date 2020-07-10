@@ -23,7 +23,7 @@
  所以在进行方法调用时，实例会通过isa指针去类中进行查找，类的isa指针会去对应的原类对象中查找
 
 7、何为cache_t？工作原理以及有什么作用？
- cache_t是一个数组，里面的每一个元素都是一个bucket_t，其中bucket_t可以看作是一个hashMap，key:cache_key_t _key即selector value：IMP _imp是一个无类型的函数指针。
+ cache_t是一个结构体，里面包含一个bucket_t的结构体buckets的散列表，其中bucket_t可以看作是一个hashMap，key:cache_key_t _key即selector value：IMP _imp是一个无类型的函数指针。
  一般的方法查找流程：当对象receiver调用方法message时，会通过receiver的isa指针去查找他对应的类，然后在类的methodlist去搜索方法，有则执行，没有则使用super_class的指针到父类中的methodList去搜索，如果没有则有可能消息转发，有可能忽略
  使用cache来缓存经常使用的方法，当调用方法时优先去cache搜索如果没有，在到methods里面去搜索
  cache_t的作用：是用于快速查找方法执行函数，是可以增量扩展的哈希表结构，是局部性原理的最佳应用。
