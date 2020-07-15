@@ -9,3 +9,20 @@
 
 3、什么情况下需要使用__block修饰符
  一般情况下，对被截获的变量进行赋值操作需添加__block修饰符。需要使用的是局部变量(基本数据类型，对象类型)，不需要使用的是，静态局部变量，全局变量，静态全局变量
+
+4、为什么用__block修饰符修饰变量后在block后在去修改其值能生效？
+ 局部变量被__block修饰后会变成一个对象即为一个结构体对象，结构包含__isa指针，__forwarding指针，__flag,__size以及变量。block捕获外部变量，如果没有用__block修饰，在block声明以及调用中block捕获的是变量的值，是一个值的传递，block内部是没有权限去修改其值的。如果是用__block修饰，则是变量内存地址的传递，我们是有权限去修改其值的。
+
+5、block的类型？
+ 类型有三种:__NSGlobalBlock__内存位于数据区,__NSStackBlock__栈区,__NSMallocBlock__堆区
+
+6、__block修饰对象类型
+ 当__block变量在栈上时，不会对指向的变量产生强引用。当__block变量copy到堆上时会根据变量的修饰符做出对应的操作形成强/弱引用
+
+7、block的copy操作
+ NSStackBlock的copy操作是生成NSMallocBlock，NSGlobalBlock的copy操作什么都不做，NSMallocBlock的copy操作是增加引用计数
+
+
+
+为什么block会产生循环引用
+第一、如果当前block对当前对象的某一个成员变量进行截获，那么这个block会对对应变量强引用，当前block由于当前对象有个强引用，这就引起了循环引用。
