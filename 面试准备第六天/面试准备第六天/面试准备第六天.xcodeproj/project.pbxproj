@@ -17,6 +17,10 @@
 		660ACF6024BD99E600274208 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 660ACF5F24BD99E600274208 /* _______UITests.m */; };
 		660ACF6E24BD9A1900274208 /* BlockPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660ACF6D24BD9A1900274208 /* BlockPropertyController.m */; };
 		660ACF7224BDA85F00274208 /* BlockModifierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660ACF7124BDA85F00274208 /* BlockModifierController.m */; };
+		6633079424C573E20052E407 /* DispatchGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079324C573E20052E407 /* DispatchGroup.m */; };
+		6633079824C57B940052E407 /* DispatchOnceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079724C57B940052E407 /* DispatchOnceDemo.m */; };
+		6633079B24C57BD30052E407 /* DispatchOnceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079A24C57BD30052E407 /* DispatchOnceObj.m */; };
+		66F9024424C535E8009301F3 /* GCDDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F9024324C535E8009301F3 /* GCDDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		660ACF6D24BD9A1900274208 /* BlockPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockPropertyController.m; sourceTree = "<group>"; };
 		660ACF7024BDA85F00274208 /* BlockModifierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockModifierController.h; sourceTree = "<group>"; };
 		660ACF7124BDA85F00274208 /* BlockModifierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockModifierController.m; sourceTree = "<group>"; };
+		6633079224C573E20052E407 /* DispatchGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroup.h; sourceTree = "<group>"; };
+		6633079324C573E20052E407 /* DispatchGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroup.m; sourceTree = "<group>"; };
+		6633079624C57B940052E407 /* DispatchOnceDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceDemo.h; sourceTree = "<group>"; };
+		6633079724C57B940052E407 /* DispatchOnceDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceDemo.m; sourceTree = "<group>"; };
+		6633079924C57BD30052E407 /* DispatchOnceObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceObj.h; sourceTree = "<group>"; };
+		6633079A24C57BD30052E407 /* DispatchOnceObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceObj.m; sourceTree = "<group>"; };
+		66F9024224C535E8009301F3 /* GCDDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemo.h; sourceTree = "<group>"; };
+		66F9024324C535E8009301F3 /* GCDDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 		660ACF4224BD99E400274208 /* 面试准备第六天 */ = {
 			isa = PBXGroup;
 			children = (
+				66F9024124C535A3009301F3 /* 多线程 */,
 				660ACF6A24BD99F000274208 /* block */,
 				660ACF4324BD99E400274208 /* AppDelegate.h */,
 				660ACF4424BD99E400274208 /* AppDelegate.m */,
@@ -140,6 +153,45 @@
 				660ACF7124BDA85F00274208 /* BlockModifierController.m */,
 			);
 			path = "__block修饰符";
+			sourceTree = "<group>";
+		};
+		6633079524C57AE50052E407 /* dispatch_once */ = {
+			isa = PBXGroup;
+			children = (
+				6633079624C57B940052E407 /* DispatchOnceDemo.h */,
+				6633079724C57B940052E407 /* DispatchOnceDemo.m */,
+				6633079924C57BD30052E407 /* DispatchOnceObj.h */,
+				6633079A24C57BD30052E407 /* DispatchOnceObj.m */,
+			);
+			path = dispatch_once;
+			sourceTree = "<group>";
+		};
+		66F9024124C535A3009301F3 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				6633079524C57AE50052E407 /* dispatch_once */,
+				66F9024624C54246009301F3 /* dispatch_group */,
+				66F9024524C5422F009301F3 /* dispatch_barrier */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		66F9024524C5422F009301F3 /* dispatch_barrier */ = {
+			isa = PBXGroup;
+			children = (
+				66F9024224C535E8009301F3 /* GCDDemo.h */,
+				66F9024324C535E8009301F3 /* GCDDemo.m */,
+			);
+			path = dispatch_barrier;
+			sourceTree = "<group>";
+		};
+		66F9024624C54246009301F3 /* dispatch_group */ = {
+			isa = PBXGroup;
+			children = (
+				6633079224C573E20052E407 /* DispatchGroup.h */,
+				6633079324C573E20052E407 /* DispatchGroup.m */,
+			);
+			path = dispatch_group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +297,13 @@
 				660ACF7224BDA85F00274208 /* BlockModifierController.m in Sources */,
 				660ACF4B24BD99E400274208 /* ViewController.m in Sources */,
 				660ACF4524BD99E400274208 /* AppDelegate.m in Sources */,
+				6633079824C57B940052E407 /* DispatchOnceDemo.m in Sources */,
 				660ACF5624BD99E600274208 /* main.m in Sources */,
 				660ACF6E24BD9A1900274208 /* BlockPropertyController.m in Sources */,
 				660ACF4824BD99E400274208 /* SceneDelegate.m in Sources */,
+				66F9024424C535E8009301F3 /* GCDDemo.m in Sources */,
+				6633079B24C57BD30052E407 /* DispatchOnceObj.m in Sources */,
+				6633079424C573E20052E407 /* DispatchGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
