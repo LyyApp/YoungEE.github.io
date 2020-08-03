@@ -66,25 +66,25 @@
 -(NSMutableArray*) mixTree{
     NSMutableArray *resArray = [NSMutableArray array];
         
-    if (array.count == 1) {
-        NSMutableArray *tempArray = [NSMutableArray array];
-//        TreeNode *node = [TreeNode new];
-//        node.val = [array[0] intValue];
-        [tempArray addObject:array[0]];
-        [resArray addObject:tempArray];
-    }else{
-        for(int i=0;i < array.count-1;i++){
-            NSMutableArray *tempArray = [NSMutableArray array];
-            [tempArray addObject:<#(nonnull id)#>]
-            for (int j = 0; j < array.count -1 ; j++) {
-                if (i != j) {
-                    
-                }
-            }
-            
-            [resArray addObject:tempArray];
-        }
-    }
+//    if (array.count == 1) {
+//        NSMutableArray *tempArray = [NSMutableArray array];
+////        TreeNode *node = [TreeNode new];
+////        node.val = [array[0] intValue];
+//        [tempArray addObject:array[0]];
+//        [resArray addObject:tempArray];
+//    }else{
+//        for(int i=0;i < array.count-1;i++){
+//            NSMutableArray *tempArray = [NSMutableArray array];
+//            [tempArray addObject:<#(nonnull id)#>]
+//            for (int j = 0; j < array.count -1 ; j++) {
+//                if (i != j) {
+//
+//                }
+//            }
+//
+//            [resArray addObject:tempArray];
+//        }
+//    }
     
     return resArray;
 }
