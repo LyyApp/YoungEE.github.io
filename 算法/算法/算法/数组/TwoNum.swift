@@ -32,7 +32,8 @@ class TwoNum: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.goNums())
+//        print(self.goNums())
+        print(self.goNums1())
         // Do any additional setup after loading the view.
     }
     
@@ -58,7 +59,25 @@ class TwoNum: UIViewController {
     }
     
     //采用一遍hash算法
-    func goNums1(){
-        
+    func goNums1() -> [Int]{
+        var res = [Int]()
+        var resSet = Set<Int>()
+        for (index , val) in nums.enumerated(){
+            print("val-->",val)
+            let match = taretNum - val
+            if resSet.contains(match) {
+                print("--------包含----------")
+                print(resSet)
+                let first = nums.firstIndex(of: match)!
+                res.append(first)
+                res.append(index)
+            }else{
+                print("--------bu包含----------")
+                
+                resSet.insert(val)
+            }
+            print(resSet)
+        }
+        return res;
     }
 }
