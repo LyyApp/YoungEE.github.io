@@ -20,6 +20,7 @@
 		6633079424C573E20052E407 /* DispatchGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079324C573E20052E407 /* DispatchGroup.m */; };
 		6633079824C57B940052E407 /* DispatchOnceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079724C57B940052E407 /* DispatchOnceDemo.m */; };
 		6633079B24C57BD30052E407 /* DispatchOnceObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633079A24C57BD30052E407 /* DispatchOnceObj.m */; };
+		66C8268724DD33B2006B0B0B /* SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8268624DD33B2006B0B0B /* SemaphoreViewController.m */; };
 		66F9024424C535E8009301F3 /* GCDDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F9024324C535E8009301F3 /* GCDDemo.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		6633079724C57B940052E407 /* DispatchOnceDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceDemo.m; sourceTree = "<group>"; };
 		6633079924C57BD30052E407 /* DispatchOnceObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceObj.h; sourceTree = "<group>"; };
 		6633079A24C57BD30052E407 /* DispatchOnceObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceObj.m; sourceTree = "<group>"; };
+		66C8268524DD33B2006B0B0B /* SemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreViewController.h; sourceTree = "<group>"; };
+		66C8268624DD33B2006B0B0B /* SemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreViewController.m; sourceTree = "<group>"; };
 		66F9024224C535E8009301F3 /* GCDDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemo.h; sourceTree = "<group>"; };
 		66F9024324C535E8009301F3 /* GCDDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,9 +169,19 @@
 			path = dispatch_once;
 			sourceTree = "<group>";
 		};
+		66C8268424DD3373006B0B0B /* 信号量 */ = {
+			isa = PBXGroup;
+			children = (
+				66C8268524DD33B2006B0B0B /* SemaphoreViewController.h */,
+				66C8268624DD33B2006B0B0B /* SemaphoreViewController.m */,
+			);
+			path = "信号量";
+			sourceTree = "<group>";
+		};
 		66F9024124C535A3009301F3 /* 多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				66C8268424DD3373006B0B0B /* 信号量 */,
 				6633079524C57AE50052E407 /* dispatch_once */,
 				66F9024624C54246009301F3 /* dispatch_group */,
 				66F9024524C5422F009301F3 /* dispatch_barrier */,
@@ -300,6 +313,7 @@
 				6633079824C57B940052E407 /* DispatchOnceDemo.m in Sources */,
 				660ACF5624BD99E600274208 /* main.m in Sources */,
 				660ACF6E24BD9A1900274208 /* BlockPropertyController.m in Sources */,
+				66C8268724DD33B2006B0B0B /* SemaphoreViewController.m in Sources */,
 				660ACF4824BD99E400274208 /* SceneDelegate.m in Sources */,
 				66F9024424C535E8009301F3 /* GCDDemo.m in Sources */,
 				6633079B24C57BD30052E407 /* DispatchOnceObj.m in Sources */,
